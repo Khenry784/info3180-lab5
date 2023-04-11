@@ -7,7 +7,7 @@ class AddMovie(db.Model):
     
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80))
-    description = db.Column(db.Text(200))
+    description = db.Column(db.String(200))
     poster=db.Column(db.String(),nullable=True)
     created_at=db.Column(db.DateTime(80))
     
